@@ -1,0 +1,45 @@
+/***********  顶部导航 ***********/
+#top_nav{
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #f0f0f0;
+	background: #fafafa;
+	color: #777777;
+}
+.con{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+#top_nav .con .you{
+	width: 139px;
+	text-align: center;
+	float: left;
+}
+#top_nav .con ul{
+	width: 260px;
+	height: 308px;
+	border: 1px solid #dddddd;
+	position: absolute;
+	left: 0;
+	top: 30px;
+}
+#top_nav .con .top_right{
+	width: 700px;
+	float: right;
+}
+.top_right .user_entry{
+	width: 250px;
+	float: left;
+ }
+.top_right .quick_menu{
+	width: 440px;
+	float: left;
+}
+
+/************* LOGO ************/
+#public_head{
+	width: 1200px;
+	background: red;
+}
