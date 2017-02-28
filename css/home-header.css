@@ -41,5 +41,25 @@
 /************* LOGO ************/
 #public_head{
 	width: 1200px;
-	background: red;
+	height: 100px;
+	margin: 0 auto;
+	background: #00ffff;
 }
+#public_head .head_logo{
+	width: 485px;
+	float: left;
+}
+#public_head img{
+	display: inline-block;
+}
+
+#public_head .head_search{
+	width: 715px;
+	height: 100%;
+	background: #00fa9a;
+	display: inline-block;
+}
+
+
+
+

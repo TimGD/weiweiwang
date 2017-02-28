@@ -1,7 +1,8 @@
 html{
 	font-size: 13px;
+	font-family: "微软雅黑";
 }
-html,body,h1,h2,h3,h4,h5,p,ul,ol,img{
+html,body,h1,h2,h3,h4,h5,p,ul,ol,img,a{
 	margin: 0;
 }
 ul,ol{

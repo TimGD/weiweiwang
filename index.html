@@ -6,53 +6,345 @@
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/home-header.css">
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
-
- 
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	
+	<script type="text/javascript" src="./lib/jquery-1.12.0.js"></script>
+ 	
 </head>
 <body>
 	<!-------------- 1.顶部开始 ------------------>
 		<!-- 1.1 顶部导航 -->
-		<div id="top_nav">
-			<div class="con">
-				<div class="you">
-					<span>送至：</span>
-					<em>北京</em>
+		<div id="header">
+			<div id="top_nav">
+				<div class="con">
+					<div class="you">
+						<span>送至：</span>
+						<em>北京</em>
+					</div>
+					<ul style="display: none"></ul>
+					<div class="top_right">
+						<div class="user_entry">
+							<span>您好，欢迎来到</span>
+							<a href="index.html">为为商城</a>
+							<a href="./shop/login_index.html" class="login">请登录</a>
+							<a href="#">免费注册</a>
+						</div>
+						<div class="quick_menu">
+							<a href="#">我的订单</a>
+							<a href="#">商家中心</a>
+							<a href="#">手机为为</a>
+							<a href="#">客户服务</a>
+						<a href="#">关注我们</a>
+						</div>
+					</div>
 				</div>
-				<ul style="display: none"></ul>
-				<div class="top_right">
-					<div class="user_entry">
-						<span>您好，欢迎来到</span>
-						<a href="index.html">为为商城</a>
-						<a href="./shop/login_index.html" class="login">请登录</a>
-						<a href="#">免费注册</a>
-					</div>
-					<div class="quick_menu">
-						<a href="#">我的订单</a>
-						<a href="#">商家中心</a>
-						<a href="#">手机为为</a>
-						<a href="#">客户服务</a>
-					<a href="#">关注我们</a>
-					</div>
+			</div>
+			<!-- 1.2顶部LOGO和搜索栏 -->
+			<div id="public_head">
+				<div class="head_logo">
+					<a href="index.html" class="b_logo"><img src="./img/login/logo.png" alt="为为商城 www.mallvv.com" "></a>
+					<img src="./img/login/header-left.png" alt="上海品牌家具建材一站式购物网站">
 				</div>
 				
+				<div class="head_search">
+				</div>	
 			</div>
-		<!-- 1.2顶部LOGO和搜索栏 -->
-		<div id="public_head">
-			<div class="head_logo">
-			<a href="index.html"><img src="./img/login/logo.png" alt="为为商城 www.mallvv.com" class="b_logo"></a>
-			<img src="./img/login/header-left.png" alt="上海品牌家具建材一站式购物网站">
+		</div>
+
+
+
+		<!-------------- 1.顶部结束 ------------------>
+		<!-------------- 2.横幅开始 ------------------>
+		<div id="ban">
+			<!-- 2.1 导航 -->
+			<div class="nav">
+				<h2><a href="shop/category.html">精选分类推荐</a></h2>
+				<ul class="nav_side">
+				</ul>
+				<ul class="nav_menu">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">建材</a></li>
+					<li><a href="#">家具家纺</a></li>
+					<li><a href="#">品牌</a></li>
+					<li><a href="#">店铺</a></li>
+					<li><a href="#">装修攻略</a></li>
+					<li><a href="#">装修图库</a></li>
+				</ul>
+			</div>
+
+
+			<!-- 2.2 轮播图 -->
+			<div class="ban_con"></div>
+
+	</div>
+
+
+	<!-------------- 2.横幅结束 ------------------>
+	<!-------------- 3.主体开始 ------------------>
+	<div id="main">
+		<div class="section1 clearflex">
+			<div class="recommend">
+			<h3>
+				<a href="#" class="rec_sort">热卖商品</a>
+				<a href="#" class="rec_sort">热评商品</a>
+				<a href="#" class="rec_sort">新货上架</a>
+			</h3>
+			<div class="tab_con"></div>
+			</div>
+			<div class="news">
+				<ul>
+					<h3>
+						<b>商城快报</b> |
+						<b>装修咨询</b>
+					</h3>
+					<li><a href="#">你好</a></li>
+					<li><a href="#">你好</a></li>
+					<li><a href="#">你好</a></li>
+					<li><a href="#">你好</a></li>
+					<li><a href="#">你好</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="section2 clearflex">
+			<div class="brands">
+				<h3>品牌推荐</h3>
+				<ul>
+					<li><img src="img/home/1085834d049b67a34650.jpg"><img src="img/home/ebe7db2ffb77bf816380.jpg" alt="" /><img src="img/home/19d74fc3412e550a7180.jpg" alt="" /></li>
+					<li><img src="img/home/07c3222374d19c7f7870.jpg" alt="" /><img src="img/home/07c3222374d19c7f7870.jpg" alt="" /><img src="img/home/07c3222374d19c7f7870.jpg" alt="" /><img src="img/home/07c3222374d19c7f7870.jpg" alt="" /></li>
+					<li><img src="img/home/05169000388501556_sm.jpg" alt="" /><img src="img/home/05169000388501556_sm.jpg" alt="" /><img src="img/home/05169000388501556_sm.jpg" alt="" /><img src="img/home/05169000388501556_sm.jpg" alt="" /><img src="img/home/05169000388501556_sm.jpg" alt="" /><img src="img/home/05169000388501556_sm.jpg" alt="" /><img src="img/home/05169000388501556_sm.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="section3 clearflex">
+			<div class="sumNav">
+				<span>楼层直达:</span>
+				<b>|</b>
+				<a href="#oneFloor">1F家装主材</a>
+				<a href="#twoFloor">2F软装家具</a>
+				<a href="#threeFloor">3F家纺家饰</a>
+			</div>
+
+			<div id="oneFloor" class="goodsShow clearflex">
+				<div class="title">
+					<h2>1F家装主材</h2>
+					<div class="goodsAtt">
+						<a href="#">马桶/坐便器</a>
+						<a href="#">瓷砖</a>
+						<a href="#">地板</a>
+						<a href="#">移门衣柜</a>
+					</div>
+				</div>
+				<div class="goods_content">
+					<div class="row_l"><img src="img/home/7787643af8658c922280.jpg"></div>
+					<div class="row_m">
+						<!--两页轮播图-->
+						<div class="scroll">
+							<ul>
+							</ul>
+						</div>
+						<div class="smallShow">
+							<a href="#">
+							<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+							</a>
+							<a href="#">
+							<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="row_r">
+						<div class="smallShow">
+							<a href="#">
+							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+							</a>
+							<a href="#">
+							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+							</a>
+						</div>
+						<div class="smallShow">
+							<a href="#">
+							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+							</a>
+							<a href="#">
+							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="twoFloor" class="goodsShow clearflex">
+				<div class="title">
+					<h2>1F家装主材</h2>
+					<div class="goodsAtt">
+						<a href="#">马桶/坐便器</a>
+						<a href="#">瓷砖</a>
+						<a href="#">地板</a>
+						<a href="#">移门衣柜</a>
+					</div>
+				</div>
+				<div class="goods_content">
+					<div class="row_l"><img src="img/home/7787643af8658c922280.jpg"></div>
+					<div class="row_m">
+						<!--两页轮播图-->
+						<div class="scroll">
+							<ul>
+							</ul>
+						</div>
+						<div class="smallShow">
+							<a href="#">
+							<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+							</a>
+							<a href="#">
+							<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="row_r">
+						<div class="smallShow">
+							<a href="#">
+							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+							</a>
+							<a href="#">
+							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+							</a>
+						</div>
+						<div class="smallShow">
+							<a href="#">
+							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+							</a>
+							<a href="#">
+							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			
-			<div class="head_search">
-			</div>	
-		</div>
-	</div>
-	
 
-	
-	<div id="header">
-		
+			<div id="threeFloor" class="goodsShow clearflex">
+				<div class="title">
+					<h2>1F家装主材</h2>
+					<div class="goodsAtt">
+						<a href="#">马桶/坐便器</a>
+						<a href="#">瓷砖</a>
+						<a href="#">地板</a>
+						<a href="#">移门衣柜</a>
+					</div>
+				</div>
+				<div class="goods_content">
+					<div class="row_l"><img src="img/home/7787643af8658c922280.jpg"></div>
+					<div class="row_m">
+						<!--两页轮播图-->
+						<div class="scroll">
+							<ul>
+							</ul>
+						</div>
+						<div class="smallShow">
+							<a href="#">
+							<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+							</a>
+							<a href="#">
+							<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="row_r">
+						<div class="smallShow">
+							<a href="#">
+							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+							</a>
+							<a href="#">
+							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+							</a>
+						</div>
+						<div class="smallShow">
+							<a href="#">
+							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+							</a>
+							<a href="#">
+							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
-	<!-------------- 1.顶部结束 ------------------>
+	<!-------------- 3.主体结束 ------------------>
+	<!-------------- 4.底部开始 ------------------>
+	<div id="foot">
+
+		<div class="platformHelp clearflex">
+			<ul>
+				<li>
+				<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
+				<span>正品保证</span>
+				</li>
+				<li>
+				<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png) no-repeat center;"></a>
+				<span>正品保证</span>
+				</li>
+				<li>
+				<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
+				<span>正品保证</span>
+				</li>
+				<li>
+				<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
+				<span>正品保证</span>
+				</li>
+				<li>
+				<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
+				<span>正品保证</span>
+				</li>
+				<li>
+				<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
+				<span>正品保证</span>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="foot_nav" class="clearflex">
+			<div class="tell">
+				<h4>客服在线</h4>
+				<p>
+					<b>021-56457299</b><br/>
+					<span>周一到周五9:00-17:00</span>
+
+				</p>
+			</div>
+
+			<ul class="f_nav clearflex">
+				<li>
+					<h4>帮助中心</h4>
+					<a href="#">忘记密码</a><br/>
+					<a href="#">积分兑换说明</a><br/>
+					<a href="#">积分细则</a>
+				</li>
+				<li>
+					<h4>店主之家</h4>
+					<a href="#">如何申请开店</a>
+				</li>
+				<li>
+					<h4>支付方式</h4>
+					<a href="#">在线支付</a>
+				</li>
+				<li>
+					<h4>售后服务</h4>
+					<a href="#">退换货政策</a><br/>
+					<a href="#">退款说明</a><br/>
+					<a href="#">退换货流程</a>
+				</li>
+				<li>
+					<h4>客服中心</h4>
+					<a href="#">会员修改密码</a><br/>
+					<a href="#">会员修改个人资料</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
 </body>
 </html>

@@ -1,0 +1,88 @@
+/******** 高度坍塌 *********/
+.clearflex:after{
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+/******* 左右浮动 **********/
+.f_left{
+	float: left;
+}
+
+.f_right{
+	float: right;
+}
+
+
+/*************4.底部 *************/
+#foot{
+	margin-top: 20px;
+}
+#foot .platformHelp{
+	min-width: 1200px;
+	padding: 30px 0;
+	border-top: 3px solid #e7e7e7;
+	border-bottom: 3px solid #f9f9f9;
+}
+#foot .platformHelp li{
+	text-align: center;
+	margin-left: 140px;
+	float: left;
+}
+#foot .platformHelp a{
+	width: 60px;
+	height: 60px;
+	margin-bottom: 5px;
+	display: block;
+}
+
+#foot #foot_nav{
+	padding-top: 28px;
+	border-top: 1px solid #f5f5f5;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+#foot .tell{
+	margin-left: 75px;
+	float: left;
+}
+#foot .tell h4{
+	margin-top: 5px;
+}
+#foot .tell p{
+	padding-left: 80px;
+	height: 75px;
+	margin-top: 20px;
+	background: url(../img/home/foot-tel.png) no-repeat left center;
+}
+
+#foot .tell b{
+	line-height: 30px;
+	font-size: 16px;
+	color: #ffa542;
+
+}
+#foot .tell span{
+	font-size: 11px;
+}
+
+#foot .f_nav{
+	margin:0 30px;
+	border-left: 1px solid #f5f5f5;
+	border-right: 1px solid #f5f5f5;
+	float: left;
+}
+#foot .f_nav li{
+	margin-left: 30px;
+	float: left;
+}
+#foot  .f_nav h4{
+	font-size: 14px;
+	color: #666666;
+}
+#foot .f_nav a{
+	color: black;
+}

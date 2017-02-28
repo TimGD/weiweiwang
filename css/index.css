@@ -1,0 +1,178 @@
+/*************** 导航 *************/
+#ban .nav{
+	width: 1200px;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 auto;
+	background: #00bfff;
+	position: relative;
+}
+#ban .nav .nav_side{
+	width: 212px;
+	height: 402px;
+	background: #2b2b2b;
+	position: absolute;
+	left: 0;
+	top: 36px;
+}
+
+#ban .nav .nav_menu{
+	height: 36px;
+	padding-left:18px;
+	text-align: center;
+	background: url(../img/home/nav-right.png) no-repeat  right bottom;
+}
+#ban .nav .nav_menu li{
+	float: left;
+}
+#ban .nav .nav_menu li a{
+	padding: 0 18px;
+	color: #333333;
+	font-size: 15px;
+}
+
+#ban .nav h2{
+	width: 212px;
+	height: 36px;
+	padding-left: 36px;
+	background: #ffa500 url(../img/home/top_bg.png) no-repeat -170px -172px;
+	float: left;
+}
+#ban .nav h2 a{
+	color: white;
+}
+
+.ban_con{
+	min-width: 1200px;
+	height: 400px;
+	border-top: 2px solid #000000;
+}
+
+/*********  轮播图  *********/
+
+
+/************** 主体 ***************/
+#main{
+	width: 1200px;
+	margin: 0 auto;
+	background: #708090;
+}
+#main .recommend{
+	width: 990px;
+	height: 100%;
+	background: #87ceeb;
+	float: left;
+}
+#main .recommend .rec_sort{
+	width: 197px;
+	height: 40px;
+	line-height: 40px;
+	color: #666666;
+	text-align: center;
+	background: #add8e6 url(../img/home/tab_bg.png) no-repeat center bottom;
+	display: inline-block;
+}
+
+#main .recommend .tab_con{
+	width: 900px;
+	height: 250px;
+	background: #b0e0e6;
+	border-top: 2px solid #f0f0f0;
+	border-bottom: 2px solid #f0f0f0;
+}
+#main .section1 .news{
+	float: left;
+
+}
+#main .section1 .news ul{
+	border: 1px solid #f0f0f0;
+	width: 198px;
+	height: 156px;
+}
+#main .section1 .news h3{
+	height: 36px;
+	line-height:36px;
+	border-bottom: #f0f0f0;
+	background: #f9f9f9;
+}
+
+/*********** 1.2 主体section2 *************/
+#main .section2 h3{
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	color: #666666;
+	background: url(../img/home/tips.jpg) no-repeat 100px;
+}
+#main .section2 img{
+	float: left;
+}
+
+/*********** 1.3 主体section3 *************/
+#main .section3 img{
+	float: left;
+}
+#main .row_l,.row_m,.row_r{
+	float: left;
+}
+/*标题样式*/
+#main .section3 .sumNav{
+	height: 86px;
+	color: #cccfd2;
+	line-height: 86px;
+	border-bottom: 1px solid #dddddd;
+}
+#main .section3 .sumNav span{
+	color: #ffac00;
+	margin-right: 20px;
+	display: inline-block;
+}
+#main .section3 .sumNav a{
+	width: 120px;
+	height: 36px;
+	margin: 0 30px;
+	color: black;
+	display: inline-block;
+}
+
+
+/*商品展览样式*/
+#main .section3 .title{
+	height: 76px;
+	line-height: 76px;
+	border-bottom: 1px solid #60b3ff;
+	position: relative;
+}
+#main .section3 .title .goodsAtt{
+	width: 210px;
+	height: 26px;
+	line-height: 26px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#main .section3 .title .goodsAtt a{
+	font-size: 11px;
+	color: #000000;
+	margin-right: 8px;
+}
+#main .section3 h2{
+	width: 112px;
+	height: 75px;
+	padding-left: 12px;
+	color: #666666;
+	font-size: 21px;
+	border-bottom: 1px solid #60b3ff;
+}
+#main .section3 .row_l{
+	width: 220px;
+}
+#main .section3 .row_m{
+	width: 500px;
+}
+#main .section3 .row_m .scroll{
+	height: 320px;
+}
+#main .section3 .row_r{
+	width: 480px;
+}
