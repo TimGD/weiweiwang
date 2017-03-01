@@ -9,73 +9,210 @@
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	
 	<script type="text/javascript" src="./lib/jquery-1.12.0.js"></script>
- 	
+	<!-- <script type="text/javascript" src="./lib/jquery-1.11.1.min.js"></script> -->
+	<script src="./js/unslider.min.js"></script>
+
 </head>
 <body>
 	<!-------------- 1.顶部开始 ------------------>
-		<!-- 1.1 顶部导航 -->
-		<div id="header">
-			<div id="top_nav">
-				<div class="con">
-					<div class="you">
-						<span>送至：</span>
-						<em>北京</em>
+	<!-- 1.1 顶部导航 -->
+	<div id="header">
+		<div id="top_nav">
+			<div class="con">
+				<div class="address">
+					<span>送至:</span>
+					<em>北京</em>
+				</div>
+				<script>
+					
+
+					$.ajax({
+						type: 'GET',
+						url: "json/address.json",
+						success: function(res){
+							var $ul= $('<ul>').addClass('province');
+
+							//遍历添加a和li标签
+							$.each(res,function(_index, ele){
+								var $li = $('<li>');
+								var $a = $('<a href="javascript:void(0)">').html(ele.name);
+
+								//给a标签加动作
+								$a.mouseover(function(){
+									if(!$(this).attr('class')){$(this).addClass('over');}
+								// console.log()
+								});
+
+								$a.mouseout(function(){
+									$('a').removeClass('over');
+								});
+
+								$a.click(function(){
+									$('.con a').removeClass();
+									$(this).addClass('active');
+									$('.address em').html($(this).html());
+								});
+
+								$li.append($a);
+								$ul.append($li);
+							});
+							$('.address').append($ul);
+						}
+					});
+
+					var onoff = true;
+					$('.address').mouseover(function(){
+						if(onoff){
+							$(this).addClass('addressOver');
+							$('.province a').eq(0).addClass('active');
+							$('.province').css('display','block');
+							onoff=false;
+						}
+					});
+
+					$('.address').mouseout(function(){
+						$(this).removeClass('addressOver');
+						$('.province').css('display','none');
+						onoff=true;
+					});
+					// $('.province').mouseover(function(){
+					// 	$('.address').addClass('addressOver');
+					// 	$('.province a').eq(0).addClass('active');
+					// 	$(this).css('display','block');
+					// });
+					// $('.province').mouseout(function(){
+					// 	$('address').removeClass('addressOver');
+					// 	$(this).css('display','none');
+					// });
+
+				</script>
+
+
+
+
+				<div class="top_right">
+					<div class="user_entry">
+						<span>您好，欢迎来到</span>
+						<a href="index.html">为为商城</a>
+						<a href="./shop/login_index.html" class="login">请登录</a>
+						<a href="#">免费注册</a>
 					</div>
-					<ul style="display: none"></ul>
-					<div class="top_right">
-						<div class="user_entry">
-							<span>您好，欢迎来到</span>
-							<a href="index.html">为为商城</a>
-							<a href="./shop/login_index.html" class="login">请登录</a>
-							<a href="#">免费注册</a>
-						</div>
-						<div class="quick_menu">
-							<a href="#">我的订单</a>
-							<a href="#">商家中心</a>
-							<a href="#">手机为为</a>
-							<a href="#">客户服务</a>
+					<div class="quick_menu">
+						<a href="#">我的订单</a>
+						<a href="#">商家中心</a>
+						<a href="#">手机为为</a>
+						<a href="#">客户服务</a>
 						<a href="#">关注我们</a>
-						</div>
 					</div>
 				</div>
 			</div>
-			<!-- 1.2顶部LOGO和搜索栏 -->
-			<div id="public_head">
-				<div class="head_logo">
-					<a href="index.html" class="b_logo"><img src="./img/login/logo.png" alt="为为商城 www.mallvv.com" "></a>
-					<img src="./img/login/header-left.png" alt="上海品牌家具建材一站式购物网站">
-				</div>
-				
-				<div class="head_search">
-				</div>	
+		</div>
+		<!-- 1.2顶部LOGO和搜索栏 -->
+		<div id="public_head">
+			<div class="head_logo">
+				<a href="index.html" class="b_logo"><img src="./img/login/logo.png" alt="为为商城 www.mallvv.com" "></a>
+				<img src="./img/login/header-left.png" alt="上海品牌家具建材一站式购物网站">
+				<div class=></div>
 			</div>
+
+			<div class="head_search">
+		</div>
+	</div>
+	<!-------------- 1.顶部结束 ------------------>
+	<!-------------- 2.横幅开始 ------------------>
+	<div id="ban">
+		<!-- 2.1 导航 -->
+		<div class="nav">
+			<h2><a href="shop/category.html">精选分类推荐</a></h2>
+			<ul class="nav_side">
+			</ul>
+			<ul class="nav_menu">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">建材</a></li>
+				<li><a href="#">家具家纺</a></li>
+				<li><a href="#">品牌</a></li>
+				<li><a href="#">店铺</a></li>
+				<li><a href="#">装修攻略</a></li>
+				<li><a href="#">装修图库</a></li>
+			</ul>
 		</div>
 
 
+		<!-- 2.2 轮播图 -->
+		<style>
+			.banner { position: relative; overflow: auto; text-align: center; z-index: 1;}
+			.banner li { list-style: none; overflow: hidden; }
+			.banner ul li { float: left; }
+			#b03 { width: 1347px; margin: 0 auto; overflow: hidden;}
+			#b03 .dots { position: absolute; left: 0; right: 0; bottom: 20px;}
+			#b03 .dots li{ 
+				display: inline-block; 
+				width: 24px; 
+				height: 6px; 
+				margin: 0 4px; 
+				text-indent: -999em; 
+				/*border: 2px solid #fff; */
+				/*border-radius: 6px; */
+				background: #a6bdb8;
+				cursor: pointer; 
+				/*opacity: .4; */
+				-webkit-transition: background .5s, opacity .5s; 
+				-moz-transition: background .5s, opacity .5s; 
+				transition: background .5s, opacity .5s;
+			}
+			#b03 .dots li.active{
+				background: #ffa500;
+				opacity: 1;
+			}
+		</style>
 
-		<!-------------- 1.顶部结束 ------------------>
-		<!-------------- 2.横幅开始 ------------------>
-		<div id="ban">
-			<!-- 2.1 导航 -->
-			<div class="nav">
-				<h2><a href="shop/category.html">精选分类推荐</a></h2>
-				<ul class="nav_side">
-				</ul>
-				<ul class="nav_menu">
-					<li><a href="#">首页</a></li>
-					<li><a href="#">建材</a></li>
-					<li><a href="#">家具家纺</a></li>
-					<li><a href="#">品牌</a></li>
-					<li><a href="#">店铺</a></li>
-					<li><a href="#">装修攻略</a></li>
-					<li><a href="#">装修图库</a></li>
-				</ul>
-			</div>
+		<div class="banner" id="b03" >
+			<ul>
+				<li><img src="img/home/web-101-101-1.jpg" alt="" width="1920" height="400" ></li>
+				<li><img src="img/home/web-101-101-2.jpg" alt="" width="1920" height="400" ></li>
+				<li><img src="img/home/web-101-101-3.jpg" alt="" width="1920" height="400" ></li>
+				<li><img src="img/home/web-101-101-4.jpg" alt="" width="1920" height="400" ></li>
+				<li><img src="img/home/web-101-101-5.jpg" alt="" width="1920" height="400" ></li>
+			</ul>
+		</div>
 
+		<script>
+			function imgReload(){
+				var imgHeight = 0;
+				var wtmp = $("body").width();
+				if(wtmp>1200){
+					$("#b03 ul li").each(function(){
+						$(this).css({width:wtmp + "px"});
+					});
 
-			<!-- 2.2 轮播图 -->
-			<div class="ban_con"></div>
+					$(".sliderimg").each(function(){
+						$(this).css({width:wtmp + "px"});
+						imgHeight = $(this).height();
+					});
+				}else{
+					$("#b03 ul li").each(function(){
+						$(this).css({width:"1200px"});
+					});
 
+					$(".sliderimg").each(function(){
+						$(this).css({width:"1200px"});
+						imgHeight = $(this).height();
+					});
+				}
+			
+			}
+
+			$(window).resize(function(){imgReload();});
+
+			$(document).ready(function(e){
+				imgReload();
+			});
+				$('#b03').unslider({
+					dots: true,
+					fluid: true
+				});
+			
+		</script>
 	</div>
 
 
@@ -84,12 +221,12 @@
 	<div id="main">
 		<div class="section1 clearflex">
 			<div class="recommend">
-			<h3>
-				<a href="#" class="rec_sort">热卖商品</a>
-				<a href="#" class="rec_sort">热评商品</a>
-				<a href="#" class="rec_sort">新货上架</a>
-			</h3>
-			<div class="tab_con"></div>
+				<h3>
+					<a href="#" class="rec_sort">热卖商品</a>
+					<a href="#" class="rec_sort">热评商品</a>
+					<a href="#" class="rec_sort">新货上架</a>
+				</h3>
+				<div class="tab_con"></div>
 			</div>
 			<div class="news">
 				<ul>
@@ -146,28 +283,28 @@
 						</div>
 						<div class="smallShow">
 							<a href="#">
-							<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+								<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
 							</a>
 							<a href="#">
-							<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+								<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="row_r">
 						<div class="smallShow">
 							<a href="#">
-							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 							<a href="#">
-							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 						</div>
 						<div class="smallShow">
 							<a href="#">
-							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 							<a href="#">
-							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 						</div>
 					</div>
@@ -194,28 +331,28 @@
 						</div>
 						<div class="smallShow">
 							<a href="#">
-							<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+								<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
 							</a>
 							<a href="#">
-							<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+								<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="row_r">
 						<div class="smallShow">
 							<a href="#">
-							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 							<a href="#">
-							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 						</div>
 						<div class="smallShow">
 							<a href="#">
-							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 							<a href="#">
-							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 						</div>
 					</div>
@@ -243,28 +380,28 @@
 						</div>
 						<div class="smallShow">
 							<a href="#">
-							<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+								<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
 							</a>
 							<a href="#">
-							<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+								<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="row_r">
 						<div class="smallShow">
 							<a href="#">
-							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 							<a href="#">
-							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 						</div>
 						<div class="smallShow">
 							<a href="#">
-							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 							<a href="#">
-							<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 						</div>
 					</div>
@@ -280,28 +417,28 @@
 		<div class="platformHelp clearflex">
 			<ul>
 				<li>
-				<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
-				<span>正品保证</span>
+					<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
+					<span>正品保证</span>
 				</li>
 				<li>
-				<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png) no-repeat center;"></a>
-				<span>正品保证</span>
+					<a href="#" style="background: url(img/home/f0a5ee0bfc20dd005850.png) no-repeat center;"></a>
+					<span>假一赔五</span>
 				</li>
 				<li>
-				<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
-				<span>正品保证</span>
+					<a href="#" style="background: url(img/home/72edb29cc2ad2af46000.png)"></a>
+					<span>14天无理由退货</span>
 				</li>
 				<li>
-				<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
-				<span>正品保证</span>
+					<a href="#" style="background: url(img/home/c827005fae642e146280.png)"></a>
+					<span>先行赔付</span>
 				</li>
 				<li>
-				<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
-				<span>正品保证</span>
+					<a href="#" style="background: url(img/home/3497c1b195bde1928550.png)"></a>
+					<span>三年质保</span>
 				</li>
-				<li>
-				<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
-				<span>正品保证</span>
+				<li style="margin-right: 0;">
+					<a href="#" style="background: url(img/home/ea3ff5e9bf84afc34800.png)"></a>
+					<span>线下看样</span>
 				</li>
 			</ul>
 		</div>
@@ -343,8 +480,33 @@
 					<a href="#">会员修改个人资料</a>
 				</li>
 			</ul>
+			<div class="foot_right">
+				<div class="appLink">
+					<b>为为网APP</b>
+					<img src="img/home/weixin-app.png">
+					<span>下载移动客户端</span>
+				</div>
+				<div class="weixinLink">
+					<b>为为网微信</b>
+					<img src="img/home/weixin-weixin.png">
+					<span>为为网官方微信</span>
+				</div>
+			</div>
 		</div>
-
 	</div>
+	<!-------------- 4.底部结束 ------------------>
+	<!-------------- 5.版权开始 ------------------>
+	<div id="copyright">
+		<ul class="clearflex">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">招聘英才</a></li>
+			<li><a href="#">合作及洽谈</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">关于我们</a></li>
+			<li ><a href="#" style="border-right: none;">友情链接</a></li>
+		</ul>
+		<p>Copyright 2015 沪ICP备08001311号 | 营业执照</p>
+	</div>
+
 </body>
 </html>

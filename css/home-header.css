@@ -10,24 +10,78 @@
 	width: 1200px;
 	height: 100%;
 	margin: 0 auto;
+	
+}
+#top_nav .con .address{
+	width: 80px;
+	/*font-size: 12px;*/
+	padding-left: 10px;
+	background: url(../img/home/top-up.png) no-repeat 75px center;
+	float: left;
 	position: relative;
 }
-#top_nav .con .you{
-	width: 139px;
-	text-align: center;
+#top_nav .con .addressOver{
+	width: 79px;
+	padding-left: 10px;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	border-bottom: 1px solid #fff;
+	background: #ffffff;
+	float: left;
+	position: relative;
+	z-index: 11;
+
+}
+#top_nav .con em{
+	font-style: normal;
+}
+
+/*省份*/
+#top_nav .con .province{
+	width: 224px;
+	height: 308px;
+	padding: 0 24px 0 12px;
+	border: 1px solid #dddddd;
+	background: #fff;
+	position: absolute;
+	left: -1px;
+	top: 30px;
+	z-index: 10;
+	display: none;
+}
+#top_nav .con .province li{
+	margin-right: 4px;
+	line-height: 25px;
+}
+#top_nav .con .province a{
+	font-size: 12px;
+	line-height: 1;
+	padding: 4px 8px;
+	color: black;
+ 	display: inline-block;
+}
+#top_nav .con .province .over{
+	background: #eeeeee;
+	color: #ffa500;
+}
+#top_nav .con .province .active{
+	color: #fff;
+	background: #ffa500;
+}
+
+#top_nav .con .province li{
 	float: left;
 }
-#top_nav .con ul{
-	width: 260px;
-	height: 308px;
-	border: 1px solid #dddddd;
-	position: absolute;
-	left: 0;
-	top: 30px;
-}
+
 #top_nav .con .top_right{
 	width: 700px;
 	float: right;
+}
+#top_nav .user_entry a{
+	color: black;
+}
+#top_nav .quick_menu a{
+	color: #777777;
 }
 .top_right .user_entry{
 	width: 250px;
@@ -43,11 +97,17 @@
 	width: 1200px;
 	height: 100px;
 	margin: 0 auto;
-	background: #00ffff;
+	position: relative;
 }
 #public_head .head_logo{
 	width: 485px;
-	float: left;
+	position: absolute;
+	left: 0;
+	top: 22px;
+}
+#public_head a{
+	display: inline-block;
+
 }
 #public_head img{
 	display: inline-block;
@@ -58,6 +118,7 @@
 	height: 100%;
 	background: #00fa9a;
 	display: inline-block;
+	float: right
 }
 
 
