@@ -2,7 +2,7 @@
 #top_nav{
 	height: 30px;
 	line-height: 30px;
-	border: 1px solid #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;
 	background: #fafafa;
 	color: #777777;
 }
@@ -15,8 +15,7 @@
 #top_nav .con .address{
 	width: 80px;
 	/*font-size: 12px;*/
-	padding-left: 10px;
-	background: url(../img/home/top-up.png) no-repeat 75px center;
+	background: url(../img/home/top_bg.png) no-repeat 74px 15px;
 	float: left;
 	position: relative;
 }
@@ -26,7 +25,7 @@
 	border-left: 1px solid #dddddd;
 	border-right: 1px solid #dddddd;
 	border-bottom: 1px solid #fff;
-	background: #ffffff;
+	background: #ffffff url(../img/home/top-up.png) no-repeat 74px center;
 	float: left;
 	position: relative;
 	z-index: 11;
@@ -34,6 +33,7 @@
 }
 #top_nav .con em{
 	font-style: normal;
+	
 }
 
 /*省份*/
@@ -44,7 +44,7 @@
 	border: 1px solid #dddddd;
 	background: #fff;
 	position: absolute;
-	left: -1px;
+	left: 0;
 	top: 30px;
 	z-index: 10;
 	display: none;
@@ -73,6 +73,8 @@
 	float: left;
 }
 
+/*顶部导航*/
+
 #top_nav .con .top_right{
 	width: 700px;
 	float: right;
@@ -82,6 +84,7 @@
 }
 #top_nav .quick_menu a{
 	color: #777777;
+	/*border-right: 1px solid #777777;*/
 }
 .top_right .user_entry{
 	width: 250px;
@@ -101,11 +104,17 @@
 }
 #public_head .head_logo{
 	width: 485px;
+	vertical-align: middle;
 	position: absolute;
 	left: 0;
 	top: 22px;
 }
+#public_head .head_logo a img{
+	vertical-align: top;
+	width: 176px;
+}
 #public_head a{
+	vertical-align: top;
 	display: inline-block;
 
 }
@@ -114,13 +123,151 @@
 }
 
 #public_head .head_search{
-	width: 715px;
-	height: 100%;
-	background: #00fa9a;
-	display: inline-block;
-	float: right
+	width: 550px;
+	position: absolute;
+	left: 487px;
+	top: 23px;
 }
 
+/************** 搜索框 **********/
+#public_head .head_search form{
+	width: 504px;
+	height: 36px;
+	border: 3px solid #ffa500;
+	
+}
 
+#public_head .head_search form select{
+	appearance:none;
+  	-moz-appearance:none;
+  	-webkit-appearance:none;
+	width: 64px;
+	height: 36px;
+	border: 0;
+	font-size: 12px;
+	color: #666;
+	padding-left: 14px;
+	background: #f9f9f9 url(../img/home/top_bg.png) no-repeat 45px 17px;
+	float: left;
+}
 
+#public_head .search_content{
+	width: 360px;
+	height: 36px;
+	padding: 0;
+	border: 0;
+	float: left;
+}
 
+#public_head .search_start{
+	width: 80px;
+	height: 36px;
+	padding: 0;
+	color: #fff;
+	font-size: 15px;
+	border: 0;
+	float: left;
+	background: #ffa500;
+
+}
+
+#public_head .hotgoods{
+	padding-top: 8px;
+}
+#public_head .hotgoods a{
+	color: #666;
+}
+
+/*购物车*/
+.shopping_cart{
+	width: 145px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 23px;
+}
+
+.shopping_cart dt{
+	width: 145px;
+	height: 40px;
+	line-height: 40px;
+	/*text-align: center;*/
+	border: 1px solid #f0f0f0;
+	color: #555555;
+	background: #fafafa;
+	float: right;
+}
+.shopping_cart .cart_active{
+	background: #fff;
+	border-bottom-color: #fff;
+	position: relative;
+	z-index: 21;
+}
+.shopping_cart i{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	background: url(../img/home/top_bg.png) no-repeat -120px 0px;
+	display: inline-block;
+	margin: 0 10px;
+}
+.shopping_cart em{
+	width: 0px;
+	height: 0px;
+	border:4px ;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 8px;
+	border-style: solid dashed dashed dashed;
+	-webkit-transition: .2s ease-in;
+	-moz-transition: -webkit-transform .2s ease-in;
+	-o-transition: -webkit-transform .2s ease-in;
+	transition: .2s ease-in;
+	border-color: #777 transparent transparent transparent;
+}
+
+.shopping_cart dd{
+	width: 348px;
+	height: 150px;
+	border: 1px solid #f0f0f0;
+	position: absolute;
+	top: 41px;
+	right: 0;
+	z-index:20;
+	display: none;
+}
+
+.shopping_cart dd p{
+	height: 42px;
+	background: #fff;
+	line-height: 42px;
+	padding-left: 8px;
+	border-bottom: 1px solid #dddddd;
+	font-size: 12px;
+	font-weight: 700;
+
+}
+.shopping_cart dd ul{
+	height: 58px;
+	line-height: 58px;
+	text-align: center;
+	color: #666666;
+	background: #fff;
+}
+.shopping_cart dd div{
+	height: 48px;
+	background: #f0f0f0;
+	position: relative;
+}
+.shopping_cart dd a{
+	width: 124px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	border-radius: 2px;
+	background: #ffa500;
+	color: #fff;
+	position: absolute;
+	right: 9px;
+	top: 12px;
+}

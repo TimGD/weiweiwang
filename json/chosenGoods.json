@@ -1,0 +1,344 @@
+[
+	{
+		"goodsClass": "建材",
+		"href": "",
+		"secondaryClass": [
+			{
+				"secondaryName": "基础建材",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "其他辅料",
+						"t_href": ""
+					},{
+						"t_L_Name": "开关插座",
+						"t_href": ""
+					},{
+						"t_L_Name": "油漆涂料",
+						"t_href": ""
+					},{
+						"t_L_Name": "电线",
+						"t_href": ""
+					}
+				]
+			},{
+				"secondaryName": "瓷砖/大理石",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "釉面砖",
+						"t_href": ""
+					},{
+						"t_L_Name": "玻化砖",
+						"t_href": ""
+					},{
+						"t_L_Name": "仿古砖",
+						"t_href": ""
+					},{
+						"t_L_Name": "木纹砖",
+						"t_href": ""
+					},{
+						"t_L_Name": "微晶石",
+						"t_href": ""
+					},{
+						"t_L_Name": "抛光砖",
+						"t_href": ""
+					},{
+						"t_L_Name": "大理石",
+						"t_href": ""
+					},{
+						"t_L_Name": "瓷砖辅料",
+						"t_href": ""
+					},{
+						"t_L_Name": "人造石",
+						"t_href": ""
+					},{
+						"t_L_Name": "花岗石",
+						"t_href": ""
+					},{
+						"t_L_Name": "陶瓷",
+						"t_href": ""
+					},{
+						"t_L_Name": "金刚石",
+						"t_href": ""
+					},{
+						"t_L_Name": "墙面砖",
+						"t_href": ""
+					}
+				]
+			},{
+				"secondaryName": "卫浴",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "坐便器",
+						"t_href": ""
+					},{
+						"t_L_Name": "坐便器盖板",
+						"t_href": ""
+					},{
+						"t_L_Name": "龙头",
+						"t_href": ""
+					},{
+						"t_L_Name": "卫浴套装",
+						"t_href": ""
+					}
+				]
+			},{
+				"secondaryName": "集成吊顶",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "多功能组合电器",
+						"t_href": ""
+					},{
+						"t_L_Name": "照明模块",
+						"t_href": ""
+					},{
+						"t_L_Name": "扣板模块",
+						"t_href": ""
+					},{
+						"t_L_Name": "换气模块",
+						"t_href": ""
+					},{
+						"t_L_Name": "灯照模块",
+						"t_href": ""
+					},{
+						"t_L_Name": "暖风模块",
+						"t_href": ""
+					}
+				]
+			},{
+				"secondaryName": "橱柜",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "整体橱柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "柜体",
+						"t_href": ""
+					},{
+						"t_L_Name": "门板",
+						"t_href": ""
+					},{
+						"t_L_Name": "台面",
+						"t_href": ""
+					},{
+						"t_L_Name": "橱柜配件",
+						"t_href": ""
+					}
+				]
+			},
+			{
+				"secondaryName": "淋浴房",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "定制淋浴房",
+						"t_href": ""
+					}
+				]
+			},{
+				"secondaryName": "地板/榻榻米",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "实木地板",
+						"t_href": ""
+					},{
+						"t_L_Name": "强化复合地板",
+						"t_href": ""
+					},{
+						"t_L_Name": "木地板",
+						"t_href": ""
+					},{
+						"t_L_Name": "实木复合地板",
+						"t_href": ""
+					}
+				]
+			},{
+				"secondaryName": "移门衣柜",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "衣柜移门",
+						"t_href": ""
+					},{
+						"t_L_Name": "整体衣柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "隔断衣柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "折叠门",
+						"t_href": ""
+					},{
+						"t_L_Name": "定制柜类",
+						"t_href": ""
+					}
+				]
+			},{
+				"secondaryName": "墙纸",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "无妨布墙纸",
+						"t_href": ""
+					},{
+						"t_L_Name": "纯纸墙纸",
+						"t_href": ""
+					}
+				]
+			},{
+				"secondaryName": "门窗",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "防盗门",
+						"t_href": ""
+					},{
+						"t_L_Name": "木门",
+						"t_href": ""
+					},{
+						"t_L_Name": "阳台窗",
+						"t_href": ""
+					},{
+						"t_L_Name": "定制门",
+						"t_href": ""
+					},{
+						"t_L_Name": "定制窗",
+						"t_href": ""
+					},{
+						"t_L_Name": "推拉铝门",
+						"t_href": ""
+					},{
+						"t_L_Name": "福斯玛门",
+						"t_href": ""
+					}
+				]
+			},{
+				"secondaryName": "进水器/水处理",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "净水器/水处理",
+						"t_href": ""
+					}
+				]
+			},{
+				"secondaryName": "定制楼梯",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "定制柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "木质楼梯",
+						"t_href": ""
+					}
+				]
+			},{
+				"secondaryName": "保险箱",
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "保险柜",
+						"t_href": ""
+					}
+				]
+			}
+		]
+	},
+
+	{
+		"goodsClass": "家具家纺",
+		"href": "",
+		"secondaryClass": [
+			{
+				"secondaryName": "卧室",
+				"s_href": ""
+			},{
+				"secondaryName": "客厅",
+				"s_href": ""
+			},{
+				"secondaryName": "餐厅",
+				"s_href": ""
+			},{
+				"secondaryName": "书房",
+				"s_href": ""
+			},{
+				"secondaryName": "儿童房",
+				"s_href": ""
+			},
+			{
+				"secondaryName": "办公家具",
+				"s_href": ""
+			},{
+				"secondaryName": "家饰",
+				"s_href": ""
+			},{
+				"secondaryName": "软装",
+				"s_href": ""
+			},{
+				"secondaryName": "家纺",
+				"s_href": ""
+			}
+		]
+	},
+	{
+		"goodsClass": "装修服务",
+		"href": "",
+		"secondaryClass": [
+			{
+				"secondaryName": "免费设计",
+				"s_href": ""
+			},{
+				"secondaryName": "装修设计",
+				"s_href": ""
+			},{
+				"secondaryName": "装修大全",
+				"s_href": ""
+			},{
+				"secondaryName": "装修效果图",
+				"s_href": ""
+			},{
+				"secondaryName": "家具图册",
+				"s_href": ""
+			},
+			{
+				"secondaryName": "精品专题",
+				"s_href": ""
+			},{
+				"secondaryName": "装修攻略",
+				"s_href": ""
+			},{
+				"secondaryName": "装修前",
+				"s_href": ""
+			},{
+				"secondaryName": "装修中",
+				"s_href": ""
+			},{
+				"secondaryName": "装修风水",
+				"s_href": ""
+			},{
+				"secondaryName": "家装学堂",
+				"s_href": ""
+			},
+			{
+				"secondaryName": "家居生活",
+				"s_href": ""
+			},{
+				"secondaryName": "植物花卉",
+				"s_href": ""
+			},{
+				"secondaryName": "宠物",
+				"s_href": ""
+			},{
+				"secondaryName": "手工DIY",
+				"s_href": ""
+			}
+		]
+	}
+
+]

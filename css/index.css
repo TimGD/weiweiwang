@@ -1,22 +1,69 @@
 /*************** 导航 *************/
 #ban .nav{
+	min-width: 1200px;
+	border-bottom: 2px solid black;
+}
+#ban .nav_con{
 	width: 1200px;
 	height: 36px;
 	line-height: 36px;
 	margin: 0 auto;
-	background: #00bfff;
 	position: relative;
 }
+
+#ban .nav .title{
+	width: 202px;
+	height: 36px;
+	padding-left: 10px;
+	background: #ffa500;
+	float: left;
+}
+#ban .nav .title i{
+	width: 22px;
+	height: 20px;
+	background: url(../img/home/top_bg.png) no-repeat -182px -185px;
+	vertical-align: middle;
+	display: inline-block;
+}
+#ban .nav .title h3{
+	width: 100px;
+	font-weight: normal;
+	display: inline-block;
+}
+#ban .nav .title a{
+	color: white;
+}
+
+/*导航侧边栏*/
 #ban .nav .nav_side{
 	width: 212px;
 	height: 402px;
+	font-size: 12px;
 	background: #2b2b2b;
 	position: absolute;
 	left: 0;
 	top: 36px;
 	z-index: 5;
 }
+#ban .nav .nav_side dl{
+	line-height: 25px;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #252525;
+	padding: 10px 15px;
+}
+#ban .nav .nav_side dt{
+	/*margin-bottom: 10px;*/
+}
+#ban .nav .nav_side dt a{
+	color: #ffa500;
+}
+#ban .nav .nav_side dd a{
+	color: #fff;
+	padding-right: 5px;
+}
 
+
+/*横向导航*/
 #ban .nav .nav_menu{
 	height: 36px;
 	padding-left:18px;
@@ -31,23 +78,51 @@
 	color: #333333;
 	font-size: 15px;
 }
-
-#ban .nav h2{
-	width: 212px;
-	height: 36px;
-	padding-left: 36px;
-	background: #ffa500 url(../img/home/top_bg.png) no-repeat -170px -172px;
+#ban .nav .sumNav{
+	width: 990px;
+	/*height: 330px;*/
+	background: #fff;
+	color: #929292;
+	position: absolute;
+	left: 212px;
+	top: 38px;
+	z-index: 30;
+}
+#ban .nav .sumNav dl{
+	width: 298px;
+	/*padding-left: 20px;*/
+	margin: 10px;
+	border: 1px solid red;
 	float: left;
 }
-#ban .nav h2 a{
-	color: white;
+#ban .nav .sumNav dl dt{
+	padding-left: 10px;
+	border-bottom: 1px solid #eeeeee;
+}
+#ban .nav .sumNav dl dt a{
+	height: 30px;
+	color: #333333;
+	font-weight: bold;
+	display: inline-block;
+
+}
+#ban .nav .sumNav dl dd{
+	padding: 10px 0;
+}
+#ban .nav .sumNav dl dd a{
+	margin: 0 10px;
+	padding: 0;
+	line-height: 25px;
+	color: #929292;
+	float: left;
 }
 
-.ban_con{
+
+/*.ban_con{
 	min-width: 1200px;
 	height: 400px;
 	border-top: 2px solid #000000;
-}
+}*/
 
 /*********  轮播图  *********/
 
@@ -117,18 +192,18 @@
 	float: left;
 }
 /*标题样式*/
-#main .section3 .sumNav{
+#main .section3 .flexNav{
 	height: 86px;
 	color: #cccfd2;
 	line-height: 86px;
 	border-bottom: 1px solid #dddddd;
 }
-#main .section3 .sumNav span{
+#main .section3 .flexNav span{
 	color: #ffac00;
 	margin-right: 20px;
 	display: inline-block;
 }
-#main .section3 .sumNav a{
+#main .section3 .flexNav a{
 	width: 120px;
 	height: 36px;
 	margin: 0 30px;

@@ -14,78 +14,17 @@
 
 </head>
 <body>
-	<!-------------- 1.顶部开始 ------------------>
+	<!-------------- 1.头部开始 ------------------>
 	<!-- 1.1 顶部导航 -->
 	<div id="header">
 		<div id="top_nav">
 			<div class="con">
 				<div class="address">
-					<span>送至:</span>
-					<em>北京</em>
+					<div class="address_t" style="padding-left: 10px">
+						<span>送至:</span>
+						<em>北京</em>
+					</div>
 				</div>
-				<script>
-					
-
-					$.ajax({
-						type: 'GET',
-						url: "json/address.json",
-						success: function(res){
-							var $ul= $('<ul>').addClass('province');
-
-							//遍历添加a和li标签
-							$.each(res,function(_index, ele){
-								var $li = $('<li>');
-								var $a = $('<a href="javascript:void(0)">').html(ele.name);
-
-								//给a标签加动作
-								$a.mouseover(function(){
-									if(!$(this).attr('class')){$(this).addClass('over');}
-								// console.log()
-								});
-
-								$a.mouseout(function(){
-									$('a').removeClass('over');
-								});
-
-								$a.click(function(){
-									$('.con a').removeClass();
-									$(this).addClass('active');
-									$('.address em').html($(this).html());
-								});
-
-								$li.append($a);
-								$ul.append($li);
-							});
-							$('.address').append($ul);
-						}
-					});
-
-					var onoff = true;
-					$('.address').mouseover(function(){
-						if(onoff){
-							$(this).addClass('addressOver');
-							$('.province a').eq(0).addClass('active');
-							$('.province').css('display','block');
-							onoff=false;
-						}
-					});
-
-					$('.address').mouseout(function(){
-						$(this).removeClass('addressOver');
-						$('.province').css('display','none');
-						onoff=true;
-					});
-					// $('.province').mouseover(function(){
-					// 	$('.address').addClass('addressOver');
-					// 	$('.province a').eq(0).addClass('active');
-					// 	$(this).css('display','block');
-					// });
-					// $('.province').mouseout(function(){
-					// 	$('address').removeClass('addressOver');
-					// 	$(this).css('display','none');
-					// });
-
-				</script>
 
 
 
@@ -93,15 +32,15 @@
 				<div class="top_right">
 					<div class="user_entry">
 						<span>您好，欢迎来到</span>
-						<a href="index.html">为为商城</a>
-						<a href="./shop/login_index.html" class="login">请登录</a>
+						<a href="index.html" >为为商城</a>
+						<a href="./shop/login_index.html" class="login" style="color: #ffa500">请登录</a>
 						<a href="#">免费注册</a>
 					</div>
 					<div class="quick_menu">
-						<a href="#">我的订单</a>
-						<a href="#">商家中心</a>
-						<a href="#">手机为为</a>
-						<a href="#">客户服务</a>
+						<a href="#">我的订单</a> |
+						<a href="#">商家中心</a> |
+						<a href="#">手机为为</a> |
+						<a href="#">客户服务</a> |
 						<a href="#">关注我们</a>
 					</div>
 				</div>
@@ -110,34 +49,154 @@
 		<!-- 1.2顶部LOGO和搜索栏 -->
 		<div id="public_head">
 			<div class="head_logo">
-				<a href="index.html" class="b_logo"><img src="./img/login/logo.png" alt="为为商城 www.mallvv.com" "></a>
+				<a href="index.html" class="b_logo"><img src="./img/login/logo.png" alt="为为商城 www.mallvv.com" "></a>  
 				<img src="./img/login/header-left.png" alt="上海品牌家具建材一站式购物网站">
 				<div class=></div>
 			</div>
 
 			<div class="head_search">
+				<form>
+					<select>
+						<option>商品</option>
+						<option>店铺</option>
+					</select>
+					<input type="text" name="search_content" class="search_content" placeholder="请输入你要搜索商品的关键字" />
+					<input type="button" name="search_start" class="search_start" value="搜索" />
+				</form>
+				<div class="hotgoods">
+					<a href="javascript:void(0)">沙发</a>
+					<a href="javascript:void(0)">床</a>
+					<a href="javascript:void(0)">瓷砖</a>
+					<a href="javascript:void(0)">地板</a>
+					<a href="javascript:void(0)">餐桌</a>
+				</div>
+			</div>
+
+			<div class="shopping_cart">
+				<dl>
+					<dt>
+						<i></i>
+						<span>我的购物车</span>
+						<em></em>
+					</dt>
+					<dd>
+						<p>最新加入的商品</p>
+						<ul>
+							<span>您的购物车暂无商品，赶快选择心爱的商品吧！</span>
+						</ul>
+						<div>
+							<a>结算购物车中的商品</a>
+						</div>
+					</dd>
+				</dl>
+			</div>
+
 		</div>
 	</div>
-	<!-------------- 1.顶部结束 ------------------>
+	<script type="text/javascript" src="js/home-head.js"></script>
+	<!-------------- 1.头部结束 ------------------>
 	<!-------------- 2.横幅开始 ------------------>
 	<div id="ban">
 		<!-- 2.1 导航 -->
 		<div class="nav">
-			<h2><a href="shop/category.html">精选分类推荐</a></h2>
-			<ul class="nav_side">
-			</ul>
-			<ul class="nav_menu">
-				<li><a href="#">首页</a></li>
-				<li><a href="#">建材</a></li>
-				<li><a href="#">家具家纺</a></li>
-				<li><a href="#">品牌</a></li>
-				<li><a href="#">店铺</a></li>
-				<li><a href="#">装修攻略</a></li>
-				<li><a href="#">装修图库</a></li>
-			</ul>
+			<div class="nav_con">
+				<div class="title">
+					<i></i>
+					<h3><a href="shop/category.html">精选分类推荐</a></h3>
+				</div>
+				<div class="nav_side">
+				<!-- 	<dl>
+						<dt>
+							<a href="javascript:void(0)">建材</a>
+						</dt>
+						<dd>
+							<a href="javascript:void(0)">基础建材</a>
+							<a href="javascript:void(0)">基础建材</a>
+							<a href="javascript:void(0)">基础建材</a>
+							<a href="javascript:void(0)">基础建材</a>
+							<a href="javascript:void(0)">基础建材</a>
+							<a href="javascript:void(0)">基础建材</a>
+							<a href="javascript:void(0)">基础建材</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">建材</a>
+						</dt>
+						<dd>
+							<a href="javascript:void(0)">基础建材</a>
+						</dd>
+					</dl> -->
+				</div>
+				<!-- 横向导航 -->
+				<ul class="nav_menu">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">建材</a></li>
+					<li><a href="#">家具家纺</a></li>
+					<li><a href="#">品牌</a></li>
+					<li><a href="#">店铺</a></li>
+					<li><a href="#">装修攻略</a></li>
+					<li><a href="#">装修图库</a></li>
+				</ul>
+				<div class="sumNav">
+					<!-- <dl>
+						<dt>
+							<a href="javascript:void(0)">基础建材</a>
+						</dt>
+						<dd>
+							<a href="javascript:void(0)">床</a>
+							<a href="javascript:void(0)">床垫</a>
+							<a href="javascript:void(0)">床头柜</a>
+							<a href="javascript:void(0)">衣柜</a>
+							<a href="javascript:void(0)">斗柜</a>
+							<a href="javascript:void(0)">妆台镜/妆凳</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">基础建材</a>
+						</dt>
+						<dd>
+							<a href="javascript:void(0)">床</a>
+							<a href="javascript:void(0)">床垫</a>
+							<a href="javascript:void(0)">床头柜</a>
+							<a href="javascript:void(0)">衣柜</a>
+							<a href="javascript:void(0)">斗柜</a>
+							<a href="javascript:void(0)">妆台镜/妆凳</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">基础建材</a>
+						</dt>
+						<dd>
+							<a href="javascript:void(0)">床</a>
+							<a href="javascript:void(0)">床垫</a>
+							<a href="javascript:void(0)">床头柜</a>
+							<a href="javascript:void(0)">衣柜</a>
+							<a href="javascript:void(0)">斗柜</a>
+							<a href="javascript:void(0)">妆台镜/妆凳</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">基础建材</a>
+						</dt>
+						<dd>
+							<a href="javascript:void(0)">床</a>
+							<a href="javascript:void(0)">床垫</a>
+							<a href="javascript:void(0)">床头柜</a>
+							<a href="javascript:void(0)">衣柜</a>
+							<a href="javascript:void(0)">斗柜</a>
+							<a href="javascript:void(0)">妆台镜/妆凳</a>
+						</dd>
+					</dl> -->
+				</div>
+
+			</div>
 		</div>
-
-
+	</div>
+		<script type="text/javascript" src="js/index.js"></script>
 		<!-- 2.2 轮播图 -->
 		<style>
 			.banner { position: relative; overflow: auto; text-align: center; z-index: 1;}
@@ -255,7 +314,7 @@
 		</div>
 		
 		<div class="section3 clearflex">
-			<div class="sumNav">
+			<div class="flexNav">
 				<span>楼层直达:</span>
 				<b>|</b>
 				<a href="#oneFloor">1F家装主材</a>

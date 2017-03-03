@@ -1,10 +1,12 @@
-html{
-	font: 13px/150% "Hiragino Sans GB", "Microsoft Yahei", arial, 宋体, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+html,body{
+	font-size: 12px;
+	line-height: 150%;
+	font-family:  "Hiragino Sans GB", "Microsoft Yahei", arial, "宋体", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 }
-html,body,h1,h2,h3,h4,h5,p,ul,ol,img,a{
+html,body,h1,h2,h3,h4,h5,p,ul,ol,dl,dt,dd,img,a{
 	margin: 0;
 }
-ul,ol{
+ul,ol,dl,dt,dd{
 	padding: 0;
 	list-style: none;
 }
