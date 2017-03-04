@@ -2,6 +2,8 @@
 	{
 		"goodsClass": "建材",
 		"href": "",
+		"Num": "a1",
+		"goodsId": "section_one",
 		"secondaryClass": [
 			{
 				"secondaryName": "基础建材",
@@ -254,6 +256,8 @@
 	{
 		"goodsClass": "家具家纺",
 		"href": "",
+		"Num": "a2",
+		"goodsId": "section_two",
 		"secondaryClass": [
 			{
 				"secondaryName": "卧室",
@@ -289,6 +293,8 @@
 	{
 		"goodsClass": "装修服务",
 		"href": "",
+		"Num": "3",
+		"goodsId": "section_three",
 		"secondaryClass": [
 			{
 				"secondaryName": "免费设计",
