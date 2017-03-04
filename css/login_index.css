@@ -1,6 +1,268 @@
 .l_headHepl{
 	float:right;
+	position: absolute;
+	right: 0;
+	top: 45px;
 }
 .l_headHepl a{
-	
+	margin: 0 10px 30px;
+	font-size: 16px;
+	color: #333333;
 }
+#login_main{
+	min-width: 1200px;
+	height: 630px;
+	margin-bottom: 35px;
+	background: #e2ebe8;
+}
+#login_main .l_main_con{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+#login_main .l_main_con .l_bg{
+	width: 600px;
+	height: 630px;
+	background: #e2ebe8 url(../img/login/login-leftpic.png) no-repeat center;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#login_main .l_main_con .l_login{
+	width: 530px;
+	height: 510px;
+	background: url(../img/login/login-top.png) no-repeat left top;
+	position: absolute;
+	right: 0;
+	top: 40px;
+}
+
+#login_main .l_main_con .l_login form{
+	width: 340px;
+	height: 470px;
+	background: #fff;
+	position: absolute;
+	top: 10px;
+	left: 101px;
+}
+
+#login_main .l_regist{
+	margin: 30px 20px 0 0;
+	font-size: 13px;
+	float: right;
+}
+#login_main .l_regist a{
+	color: #ffa500;
+}
+
+#login_main .l_login ul{
+	width: 100%;
+	position: absolute;
+	top: 65px;
+	/*left: 20px;*/
+}
+#login_main .l_login li{
+	width: 300px;
+	height: 25PX;
+	padding: 10px 0;
+	border: 1px solid #dddddd;
+	margin: 30px auto 0;
+}
+#login_main .l_login li i{
+	width: 50px;
+	height: 25px;
+	border-right: 1px solid #ddd;
+	vertical-align: middle;
+	display: inline-block;
+}
+#login_main .l_login .l_User i{
+	background: url(../img/login/user-icon.png) no-repeat center;
+}
+#login_main .l_login .l_password i{
+	background: url(../img/login/password-icon2.png) no-repeat center;
+}
+#login_main .l_login .l_verifiCode i{
+	background: url(../img/login/register-yanzhengma-icon.png) no-repeat center;
+}
+#login_main .l_login li input{
+	border: 0;
+	width: 230px;
+	height: 25px;
+	margin-left: 10px;
+}
+#login_main .forgetpassword{
+	margin: 30px 0;
+	text-align: right;
+}
+#login_main .forgetpassword a{
+	color: black;
+
+}
+#login_main .l_login .l_submit{
+	width: 300px;
+	height: 40px;
+	margin: 0 auto;
+	border: 0;
+	border-radius: 3px;
+	background: #ffa500;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	display: block;
+}
+#login_main .l_login .forgetPassword{
+	width: 300px;
+	margin: 30px auto;
+	text-align: right;
+}
+#login_main .l_login .forgetPassword a{ 
+	color: black;
+	font-size: 15px;
+}
+
+
+
+/*注册页面*/
+#regist_main{
+	min-width: 1200px;
+	padding-top: 50px;
+	background: url(../img/login/register-line.png) repeat-x top;
+}
+
+#regist_main .r_main_con{
+	width: 1200px;
+	height: 515px;
+	margin: 0 auto;
+}
+/*注册进度*/
+#regist_main .r_main_con .r_step{
+	width: 1200px;
+	height: 45px;
+	text-align: center;
+	border-bottom: 2px solid #ddd;
+}
+#regist_main .r_main_con .r_step span{
+	width: 215px;
+	line-height: 45px;
+	font-size: 15px;
+	color: #333333;
+	text-align: center;
+	padding-left: 50px;
+	display: inline-block;
+}
+#regist_mian .r_main_con .r_step .r_active{
+	border-bottom: 2px solid #ffa500;
+}
+#regist_mian .r_main_con .r_step .r_active i{
+	background: #ffa500;
+}
+#regist_main .r_step span i{
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	line-height: 25px;
+	border-radius: 50%;
+	color: #fff;
+	background: #dcdcdc;
+	font-style: normal;
+	display: inline-block;
+}
+
+/*表单内容*/
+#regist_main form{
+	width: 420px;
+	margin: 60px auto 0;
+}
+
+#regist_main form li{
+	width: 400px;
+	height: 25px;
+	line-height: 25px;
+	border: 1px  solid #ddd;
+	padding: 10px 0;
+	position: relative;
+}
+#regist_main form li i{
+	width: 50px;
+	height: 25px;
+	margin-right: 10px;
+	border-right: 1px solid #ddd;
+	background: url(../img/login/register-yanzhengma-icon.png) no-repeat center;
+	display: inline-block;
+	float:left;
+}
+#regist_main .regist_user i{
+	background: url(../img/login/register-tel-icon.png) no-repeat center;
+}
+#regist_main form input{
+	width: 175px;
+	height: 25px;
+	line-height: 25px;
+	border: 0;
+	float: left;
+}
+#regist_main .phone_verifiCode{
+	margin-top: 30px;
+	width: 240px;
+	margin-right: 10px;
+	display: inline-block;
+	float: left;
+}
+#regist_main #getphoneCode{
+	width: 148px;
+	height: 47px;
+	font-size: 15px;
+	margin-top: 30px;
+	border-radius: 3px;
+	background: #ffa500;
+	color: #fff;
+	display: block;
+}
+
+
+#regist_main form p{
+	height: 30px;
+	width: 340px;
+	line-height: 30px;
+	padding-left: 60px;
+	color: red;
+}
+#regist_main .protocol{
+	border: 0;
+	text-align: left;
+}
+#regist_main .protocol input{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin: 5px 24px 0 0;
+	float: left;
+}
+#regist_main .protocol a{
+	color: #0199cb;
+}
+
+#regist_main #nextstep{
+	width: 400px;
+	height: 50px;
+	margin-top: 40px;
+	border-radius: 3px;
+	background: #ffa500;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+}
+
+/*验证码*/
+#regist_main #code{
+	width: 90px;
+	height: 25px;
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	/*background: red;*/
+}
+
+

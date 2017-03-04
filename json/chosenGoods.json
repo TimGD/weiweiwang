@@ -261,32 +261,216 @@
 		"secondaryClass": [
 			{
 				"secondaryName": "卧室",
-				"s_href": ""
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "床",
+						"t_href": ""
+					},{
+						"t_L_Name": "床垫",
+						"t_href": ""
+					},{
+						"t_L_Name": "床头柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "衣柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "斗柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "妆台镜/妆镜",
+						"t_href": ""
+					},{
+						"t_L_Name": "穿衣镜/衣帽架",
+						"t_href": ""
+					},{
+						"t_L_Name": "床尾凳",
+						"t_href": ""
+					},{
+						"t_L_Name": "卧室套装",
+						"t_href": ""
+					}
+				]
+
 			},{
 				"secondaryName": "客厅",
-				"s_href": ""
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "沙发",
+						"t_href": ""
+					},{
+						"t_L_Name": "茶几/边几",
+						"t_href": ""
+					},{
+						"t_L_Name": "电视柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "鞋柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "酒柜/装饰柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "休闲椅/凳",
+						"t_href": ""
+					},{
+						"t_L_Name": "间厅/玄关柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "客厅套装",
+						"t_href": ""
+					}
+				]
 			},{
 				"secondaryName": "餐厅",
-				"s_href": ""
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "餐桌",
+						"t_href": ""
+					},{
+						"t_L_Name": "餐椅",
+						"t_href": ""
+					},{
+						"t_L_Name": "餐边柜/餐车",
+						"t_href": ""
+					},{
+						"t_L_Name": "餐厅套装",
+						"t_href": ""
+					}
+				]
 			},{
 				"secondaryName": "书房",
-				"s_href": ""
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "书桌/工作台",
+						"t_href": ""
+					},{
+						"t_L_Name": "书柜/书架",
+						"t_href": ""
+					},{
+						"t_L_Name": "书椅/转椅",
+						"t_href": ""
+					},{
+						"t_L_Name": "书房套装",
+						"t_href": ""
+					}
+				]
 			},{
 				"secondaryName": "儿童房",
-				"s_href": ""
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "儿童床",
+						"t_href": ""
+					},{
+						"t_L_Name": "儿童床垫",
+						"t_href": ""
+					},{
+						"t_L_Name": "儿童床头柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "儿童衣柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "儿童书桌/电脑台",
+						"t_href": ""
+					},{
+						"t_L_Name": "儿童柜类",
+						"t_href": ""
+					},{
+						"t_L_Name": "儿童房套装",
+						"t_href": ""
+					}
+				]
 			},
 			{
 				"secondaryName": "办公家具",
-				"s_href": ""
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "办公桌",
+						"t_href": ""
+					},{
+						"t_L_Name": "文件柜/置物柜",
+						"t_href": ""
+					},{
+						"t_L_Name": "办公椅",
+						"t_href": ""
+					},{
+						"t_L_Name": "办公沙发",
+						"t_href": ""
+					},{
+						"t_L_Name": "会议桌",
+						"t_href": ""
+					},{
+						"t_L_Name": "服务台",
+						"t_href": ""
+					},{
+						"t_L_Name": "接待桌",
+						"t_href": ""
+					}
+				]
 			},{
 				"secondaryName": "家饰",
-				"s_href": ""
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "布艺织物",
+						"t_href": ""
+					},{
+						"t_L_Name": "香薰制品",
+						"t_href": ""
+					},{
+						"t_L_Name": "家居摆件",
+						"t_href": ""
+					},{
+						"t_L_Name": "餐具/茶具",
+						"t_href": ""
+					},{
+						"t_L_Name": "挂钟",
+						"t_href": ""
+					}
+				]
 			},{
 				"secondaryName": "软装",
-				"s_href": ""
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "窗帘",
+						"t_href": ""
+					},{
+						"t_L_Name": "壁纸",
+						"t_href": ""
+					},{
+						"t_L_Name": "软包",
+						"t_href": ""
+					}
+				]
 			},{
 				"secondaryName": "家纺",
-				"s_href": ""
+				"s_href": "",
+				"threeLevel": [
+					{
+						"t_L_Name": "被子/毯子",
+						"t_href": ""
+					},{
+						"t_L_Name": "凉席",
+						"t_href": ""
+					},{
+						"t_L_Name": "床上用品",
+						"t_href": ""
+					},{
+						"t_L_Name": "床上四件套",
+						"t_href": ""
+					},{
+						"t_L_Name": "布艺制品",
+						"t_href": ""
+					}
+				]
 			}
 		]
 	},

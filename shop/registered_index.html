@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/home-header.css">
 	<link rel="stylesheet" type="text/css" href="../css/login_index.css">
 
+	
+	<script src="../lib/jquery-1.11.1.min.js"></script>
 
 </head>
 <body>
@@ -25,39 +27,44 @@
 	</div>
 
 	<!-- 主体 -->
-	<div id="login_main">
-		<div class="l_main_con">
-			<div class="l_bg">
+	<div id="regist_main">
+		<div class="r_main_con">
+			<div class="r_step">
+				<span class="step1"><i>1</i>设置用户名</span>
+				<span class="step2"><i>2</i>填写账号信息</span>
+				<span class="step3"><i>3</i>注册成功</span>
 			</div>
-
-			<div class="l_login">
-				<form action="#">
-					<div class="l_regist">
-						没有账号？<a href="./registered_index.html">免费注册</a>
-					</div>
-					<ul>
-						<li class="l_User">
-							<i></i>
-							<input type="text"  placeholder="用户名/手机邮箱">
-						</li>
-						<li class="l_password">
-							<i></i>
-							<input type="password"  placeholder="密码">
-						</li>
-						<li class="l_verifiCode">
-							<i></i>
-							<input id="inputCode" type="text" placeholder="请输入验证码" />
-							<span id="code" class="mycode"></span>
-						</li>
-						<div class="forgetPassword"><a href="javascript:void(0)" >忘记密码？</a></div>
-						<input type="submit" class="l_submit" value="登录">
-					</ul>
-				</form>
-			</div>
-		</div>
+			<form action="#">
+				<ul>
+				<li class="regist_user">
+					<i></i>
+					<input type="text" placeholder="请输入你的手机号码">
+				</li>
+				<p>手机号码不能为空</p>
+				<li class="regist_verifiCode">
+					<i></i>
+					<input type="text" placeholder="请输入验证码" id="inputCode">
+					<a hred="javascript:void(0)" id="code" class="mycode"></a>
+				</li>
+				<div class="clearflex" >
+					<li class="phone_verifiCode">
+					<i></i>
+					<input type="text" placeholder="请输入手机验证码">
+					</li>
+					<input type="button" value="获取手机验证码" id="getphoneCode">
+				</div>
+				
+				<p>手机验证码不能为空</p>
+				<li class="protocol">	
+					<input type="checkbox" ><span>我已阅读并同意</span><a href="javascript:void(0)">服务协议</a>
+				</li>
+				<input type="button" value="下一步" id="nextstep">
+				</ul>
+			</form>
+		</div>	
 	</div>
-	<script type="text/javascript" src="login_regist.js"></script>
-
+	<script src="../js/login_registered.js"></script>
+	<script src="../lib/KinerCode.js"></script>
 	<!-------------- 版权 ------------------>
 	<div id="copyright">
 		<ul class="clearflex">
