@@ -13,7 +13,8 @@
 	min-width: 1200px;
 	height: 630px;
 	margin-bottom: 35px;
-	background: #e2ebe8;
+	background: #e2ebe8 url(../img/login/register-line.png) repeat-x top;
+
 }
 #login_main .l_main_con{
 	width: 1200px;
@@ -85,6 +86,9 @@
 #login_main .l_login .l_verifiCode i{
 	background: url(../img/login/register-yanzhengma-icon.png) no-repeat center;
 }
+#login_main .l_login .l_verifiCode{
+	position: relative;
+}
 #login_main .l_login li input{
 	border: 0;
 	width: 230px;
@@ -148,13 +152,14 @@
 	font-size: 15px;
 	color: #333333;
 	text-align: center;
-	padding-left: 50px;
+	margin-left: 50px;
 	display: inline-block;
 }
-#regist_mian .r_main_con .r_step .r_active{
+
+#regist_main .r_main_con .r_step .r_active{
 	border-bottom: 2px solid #ffa500;
 }
-#regist_mian .r_main_con .r_step .r_active i{
+#regist_main .r_main_con .r_step .r_active i{
 	background: #ffa500;
 }
 #regist_main .r_step span i{
@@ -255,7 +260,7 @@
 }
 
 /*验证码*/
-#regist_main #code{
+#code{
 	width: 90px;
 	height: 25px;
 	display: inline-block;
@@ -265,4 +270,69 @@
 	/*background: red;*/
 }
 
+/********* 找回密码***********/
+#bP_main{
+	min-width: 1200px;
+	height: 630px;
+	margin-bottom: 35px;
+	background: url(../img/login/register-line.png) repeat-x top;
+}
+#bP_main .bPd_main{
+	width: 550px;
+	padding-top: 82px;
+	margin: 0 auto;
+}
+#bP_main .bP_step{
+	margin: 0 auto;
+}
+#bP_main .bP_step span{
+	width: 270px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	display: inline-block;
+	background: #f5f5f5;
+}
+#bP_main .bP_step a{
+	color: black;
+	font-size: 15px;
+}
+#bP_main .bP_step .bP_active{
+	border-radius: 4px;
+	background: #ffa500;
+}
+#bP_main .bP_step .bP_active a{
+	color: #fff;
+}
+
+#bP_main .step_pic{
+	height: 60px;
+	background: red;
+}
+#bP_main .step_pic b{
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	background: #dcdcdc;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+}
+#bP_main .step_pic em{
+	width: 126px;
+	height: 4px;
+	background: #dcdcdc;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#bP_main .step_pic i{
+	width: 92px;
+	height: 4px;
+	background: #dcdcdc;
+	vertical-align: middle;
+	display: inline-block;
+}
 

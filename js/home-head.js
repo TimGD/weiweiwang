@@ -48,18 +48,18 @@ $(function(){
 //头部导航地址选择结束
 
 //购物车
-var oCart = $('.shopping_cart');
-var oCartDt = $('.shopping_cart dt');
-var oCartDd = $('.shopping_cart dd');
+	var oCart = $('.shopping_cart');
+	var oCartDt = $('.shopping_cart dt');
+	var oCartDd = $('.shopping_cart dd');
 
-oCart.mouseover(function(){
-	oCartDt.addClass('cart_active');
-	oCartDd.css('display','block');
-});
-oCart.mouseout(function(){
-	oCartDt.removeClass('cart_active');
-	oCartDd.css('display','none');
-})
+	oCart.mouseover(function(){
+		oCartDt.addClass('cart_active');
+		oCartDd.css('display','block');
+	});
+	oCart.mouseout(function(){
+		oCartDt.removeClass('cart_active');
+		oCartDd.css('display','none');
+	})
 //购物车结束
 
 
@@ -190,8 +190,6 @@ oCart.mouseout(function(){
 		},function(){
 			$(this).hide();
 		})
-		console.log(wHeight);
-		console.log(t);
 	}
 	sideChange();
 

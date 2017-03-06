@@ -30,14 +30,47 @@
 						<span>您好，欢迎来到</span>
 						<a href="index.html" >为为商城</a>
 						<a href="./shop/login_index.html" class="login" style="color: #ffa500">请登录</a>
-						<a href="#">免费注册</a>
+						<a href="shop/registered_index.html">免费注册</a>
 					</div>
 					<div class="quick_menu">
-						<a href="#">我的订单</a> |
-						<a href="#">商家中心</a> |
-						<a href="#">手机为为</a> |
-						<a href="#">客户服务</a> |
-						<a href="#">关注我们</a>
+						<dl>
+							<dt><a href="#">我的订单</a><em></em></dt>
+							<dd>
+							<a href="javascript:void(0)">代付款订单</a>
+							<a href="javascript:void(0)">待确认订单</a>
+							<a href="javascript:void(0)">待确认订单</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#">商家订单</a><em></em>
+							</dt>
+							<dd>
+							<a href="javascript:void(0)">代付款订单</a>
+							<a href="javascript:void(0)">待确认订单</a>
+							<a href="javascript:void(0)">待确认订单</a>
+							</dd>
+						</dl>
+						<dl class="phoneShop">
+							<dt><i></i><a href="#">手机为为</a></dt>
+						</dl>
+						<dl>
+							<dt><a href="#">客户服务</a><em></em></dt>
+							<dd>
+							<a href="javascript:void(0)">代付款订单</a>
+							<a href="javascript:void(0)">待确认订单</a>
+							<a href="javascript:void(0)">待确认订单</a>
+							</dd>
+						</dl>
+						<dl class="weixin">
+							<dt><i></i><a href="#">关注我们</a><em></em></dt>
+							<dd>
+							<p>
+								扫描二维码<br/>
+								关注商城微信号
+							</p>
+							<img src="./img/home/weixin-weixin.png">
+							</dd>
+						</dl>
 					</div>
 				</div>
 			</div>
@@ -96,7 +129,8 @@
 					<h3><a href="shop/category.html">精选分类推荐</a></h3>
 				</div>
 				<div class="nav_side">
-				<!-- 	<dl>
+				<!-- 侧边栏二级菜单 -->
+					<!--<dl>
 						<dt>
 							<a href="javascript:void(0)">建材</a>
 						</dt>
@@ -130,6 +164,7 @@
 					<li><a href="#">装修图库</a></li>
 				</ul>
 				<div class="sumNav">
+				<!-- 二级菜单 -->
 					<!-- <dl>
 						<dt>
 							<a href="javascript:void(0)">基础建材</a>
@@ -216,11 +251,11 @@
 
 		<div class="banner" id="b03" >
 			<ul>
-				<li><img src="img/home/web-101-101-1.jpg" alt="" width="1920" height="400" ></li>
-				<li><img src="img/home/web-101-101-2.jpg" alt="" width="1920" height="400" ></li>
-				<li><img src="img/home/web-101-101-3.jpg" alt="" width="1920" height="400" ></li>
-				<li><img src="img/home/web-101-101-4.jpg" alt="" width="1920" height="400" ></li>
-				<li><img src="img/home/web-101-101-5.jpg" alt="" width="1920" height="400" ></li>
+				<li><a href="javascript:void(0)"><img src="img/home/web-101-101-1.jpg" alt="" width="1920" height="400" ></a></li>
+				<li><a href="javascript:void(0)"><img src="img/home/web-101-101-2.jpg" alt="" width="1920" height="400" ></a></li>
+				<li><a href="javascript:void(0)"><img src="img/home/web-101-101-3.jpg" alt="" width="1920" height="400" ></a></li>
+				<li><a href="javascript:void(0)"><img src="img/home/web-101-101-4.jpg" alt="" width="1920" height="400" ></a></li>
+				<li><a href="javascript:void(0)"><img src="img/home/web-101-101-5.jpg" alt="" width="1920" height="400" ></a></li>
 			</ul>
 		</div>
 
@@ -233,9 +268,9 @@
 		<div class="section1 clearflex">
 			<div class="recommend">
 				<h3>
-					<a href="#" class="rec_sort act">热卖商品</a>
-					<a href="#" class="rec_sort">热评商品</a>
-					<a href="#" class="rec_sort">新货上架</a>
+					<a href="javascript:void(0)" class="rec_sort act">热卖商品</a>
+					<a href="javascript:void(0)" class="rec_sort">热评商品</a>
+					<a href="javascript:void(0)" class="rec_sort">新货上架</a>
 				</h3>
 				<div class="tab_con">
 					<!-- <dl>
@@ -297,11 +332,13 @@
 		
 		<div class="section3 clearflex">
 			<div class="flexNav">
-				<span>楼层直达:</span>
-				<b>|</b>
-				<a href="#oneFloor" class="active">1F家装主材</a>
-				<a href="#twoFloor">2F软装家具</a>
-				<a href="#threeFloor">3F家纺家饰</a>
+				<div>
+					<span>楼层直达:</span>
+					<b>|</b>
+					<a href="#oneFloor" class="active">1F家装主材</a>
+					<a href="#twoFloor">2F软装家具</a>
+					<a href="#threeFloor">3F家纺家饰</a>
+				</div>
 			</div>
 
 			<div id="oneFloor" class="goodsShow clearflex">
@@ -321,7 +358,7 @@
 						<div id="f01" class="scroll">
 							<ul>
 								<li><img src="img/home/56ad35ea1ecb4a6c3540.jpg" width="500px" height="320px"></li>
-								<li><img src="img/home/56ad35ea1ecb4a6c3540.jpg" width="500px" height="320px"></li>
+								<li><img src="img/home/4f20dfd49053929a7421.jpg" width="500px" height="320px"></li>
 							</ul>
 						</div>
 						<script type="text/javascript">
@@ -332,28 +369,28 @@
 
 						<div class="smallShow">
 							<a href="#">
-								<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+								<img src="img/home/cc450e35ad8d58253750.jpg" alt="">
 							</a>
 							<a href="#">
-								<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+								<img src="img/home/9bc049a0ee22d7922550.jpg" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="row_r">
 						<div class="smallShow">
 							<a href="#">
-								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/b7f87cee8feef2aa7400.jpg" alt="">
 							</a>
 							<a href="#">
-								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/0bfe272c7dbde5049690.jpg" alt="">
 							</a>
 						</div>
 						<div class="smallShow">
 							<a href="#">
-								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/c3931dbdc26a9a6d6940.jpg" alt="">
 							</a>
 							<a href="#">
-								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/e9818eff7c65920f7710.jpg" alt="">
 							</a>
 						</div>
 					</div>
@@ -362,22 +399,22 @@
 
 			<div id="twoFloor" class="goodsShow clearflex">
 				<div class="title">
-					<h2>1F家装主材</h2>
+					<h2>2F软装家具</h2>
 					<div class="goodsAtt">
-						<a href="#">马桶/坐便器</a>
-						<a href="#">瓷砖</a>
-						<a href="#">地板</a>
-						<a href="#">移门衣柜</a>
+						<a href="#">沙发</a>
+						<a href="#">电视柜</a>
+						<a href="#">茶几</a>
+						<a href="#">床</a>
 					</div>
 				</div>
 				<div class="goods_content">
-					<div class="row_l"><a href="javascript:void(0)"><img src="img/home/7787643af8658c922280.jpg"></a></div>
+					<div class="row_l"><a href="javascript:void(0)"><img src="img/home/a97a172d87516c844050.jpg"></a></div>
 					<div class="row_m">
 						<!--两页轮播图-->
 						<div id="f02" class="scroll">
 							<ul>
-								<li><img src="img/home/56ad35ea1ecb4a6c3540.jpg" width="500px" height="320px"></li>
-								<li><img src="img/home/56ad35ea1ecb4a6c3540.jpg" width="500px" height="320px"></li>
+								<li><img src="img/home/f6b9a5f53acea0798250.jpg" width="500px" height="320px"></li>
+								<li><img src="img/home/47d59c564bb803f57981.jpg" width="500px" height="320px"></li>
 							</ul>
 						</div>
 						<script type="text/javascript">
@@ -390,7 +427,7 @@
 								<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
 							</a>
 							<a href="#">
-								<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+								<img src="img/home/bd63489d890548b09210.jpg" alt="">
 							</a>
 						</div>
 					</div>
@@ -400,15 +437,16 @@
 								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
 							</a>
 							<a href="#">
-								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/7da371833bcfb0823240.jpg" alt="">
 							</a>
 						</div>
 						<div class="smallShow">
 							<a href="#">
-								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/cbdf8044c397e8212140.jpg" alt="">
 							</a>
 							<a href="#">
-								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/3115fec87e5474e29390.jpg
+" alt="">
 							</a>
 						</div>
 					</div>
@@ -418,7 +456,7 @@
 
 			<div id="threeFloor" class="goodsShow clearflex">
 				<div class="title">
-					<h2>1F家装主材</h2>
+					<h2>3F家纺家饰</h2>
 					<div class="goodsAtt">
 						<a href="#">马桶/坐便器</a>
 						<a href="#">瓷砖</a>
@@ -427,13 +465,13 @@
 					</div>
 				</div>
 				<div class="goods_content">
-					<div class="row_l"><a href="javascript:void(0)"><img src="img/home/7787643af8658c922280.jpg"></a></div>
+					<div class="row_l"><a href="javascript:void(0)"><img src="img/home/1eca013b406d83058320.jpg"></a></div>
 					<div class="row_m">
 						<!--两页轮播图-->
-							<div id="f01" class="scroll">
+						<div id="f03" class="scroll">
 							<ul>
-								<li><img src="img/home/56ad35ea1ecb4a6c3540.jpg" width="500px" height="320px"></li>
-								<li><img src="img/home/56ad35ea1ecb4a6c3540.jpg" width="500px" height="320px"></li>
+								<li><img src="img/home/493e1af68d24b3a12860.jpg" width="500px" height="320px"></li>
+								<li><img src="img/home/07702211a08f0bca3031.jpg" width="500px" height="320px"></li>
 							</ul>
 						</div>
 						<script type="text/javascript">
@@ -443,28 +481,28 @@
 						</script>
 						<div class="smallShow">
 							<a href="#">
-								<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+								<img src="img/home/8582ff2069079e401680.jpg" alt="">
 							</a>
 							<a href="#">
-								<img src="img/home/cc0831f62c9d3fe79510.jpg" alt="">
+								<img src="img/home/068a71cf75fe06269090.jpg" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="row_r">
 						<div class="smallShow">
 							<a href="#">
-								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/d6688d0bb3b00c459440.jpg" alt="">
 							</a>
 							<a href="#">
-								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/89bfdafd8df5dae01420.jpg" alt="">
 							</a>
 						</div>
 						<div class="smallShow">
 							<a href="#">
-								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/597be4293395a2293140.jpg" alt="">
 							</a>
 							<a href="#">
-								<img src="img/home/f9503bcedb3ee88e2370.jpg" alt="">
+								<img src="img/home/153ad0a56630af822690.jpg" alt="">
 							</a>
 						</div>
 					</div>
@@ -480,27 +518,27 @@
 		<div class="platformHelp clearflex">
 			<ul>
 				<li>
-					<a href="#" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
+					<a href="javascript:void(0)" style="background: url(img/home/aafda0df33d2a95e6010.png)"></a>
 					<span>正品保证</span>
 				</li>
 				<li>
-					<a href="#" style="background: url(img/home/f0a5ee0bfc20dd005850.png) no-repeat center;"></a>
+					<a href="javascript:void(0)" style="background: url(img/home/f0a5ee0bfc20dd005850.png) no-repeat center;"></a>
 					<span>假一赔五</span>
 				</li>
 				<li>
-					<a href="#" style="background: url(img/home/72edb29cc2ad2af46000.png)"></a>
+					<a href="javascript:void(0)" style="background: url(img/home/72edb29cc2ad2af46000.png)"></a>
 					<span>14天无理由退货</span>
 				</li>
 				<li>
-					<a href="#" style="background: url(img/home/c827005fae642e146280.png)"></a>
+					<a href="javascript:void(0)" style="background: url(img/home/c827005fae642e146280.png)"></a>
 					<span>先行赔付</span>
 				</li>
 				<li>
-					<a href="#" style="background: url(img/home/3497c1b195bde1928550.png)"></a>
+					<a href="javascript:void(0)" style="background: url(img/home/3497c1b195bde1928550.png)"></a>
 					<span>三年质保</span>
 				</li>
 				<li style="margin-right: 0;">
-					<a href="#" style="background: url(img/home/ea3ff5e9bf84afc34800.png)"></a>
+					<a href="javascript:void(0)" style="background: url(img/home/ea3ff5e9bf84afc34800.png)"></a>
 					<span>线下看样</span>
 				</li>
 			</ul>
@@ -561,12 +599,12 @@
 	<!-------------- 5.版权开始 ------------------>
 	<div id="copyright">
 		<ul class="clearflex">
-			<li><a href="#">首页</a></li>
-			<li><a href="#">招聘英才</a></li>
-			<li><a href="#">合作及洽谈</a></li>
-			<li><a href="#">联系我们</a></li>
-			<li><a href="#">关于我们</a></li>
-			<li ><a href="#" style="border-right: none;">友情链接</a></li>
+			<li><a href="index.html">首页</a></li>
+			<li><a href="javascript:void(0)">招聘英才</a></li>
+			<li><a href="javascript:void(0)">合作及洽谈</a></li>
+			<li><a href="javascript:void(0)">联系我们</a></li>
+			<li><a href="shop/article_cate-7.html">关于我们</a></li>
+			<li ><a href="javascript:void(0)" style="border-right: none;">友情链接</a></li>
 		</ul>
 		<p>Copyright 2015 沪ICP备08001311号 | 营业执照</p>
 	</div>

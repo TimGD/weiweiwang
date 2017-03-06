@@ -1,10 +1,14 @@
 $(function(){
+//输入规则
+    
+
+//验证码
     var inp = document.getElementById('inputCode');
     var code = document.getElementById('code');
 
     var c = new KinerCode({
         len: 4,//需要产生的验证码长度
-//        chars: ["1+2","3+15","6*8","8/4","22-15"],//问题模式:指定产生验证码的词典，若不给或数组长度为0则试用默认字典
+    //chars: ["1+2","3+15","6*8","8/4","22-15"],//问题模式:指定产生验证码的词典，若不给或数组长度为0则试用默认字典
         chars: [
             1, 2, 3, 4, 5, 6, 7, 8, 9, 0,
             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',

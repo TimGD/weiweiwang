@@ -76,24 +76,122 @@
 /*顶部导航*/
 
 #top_nav .con .top_right{
-	width: 700px;
+	width: 665px;
 	float: right;
-}
-#top_nav .user_entry a{
-	color: black;
-}
-#top_nav .quick_menu a{
-	color: #777777;
-	/*border-right: 1px solid #777777;*/
 }
 .top_right .user_entry{
 	width: 250px;
 	float: left;
  }
 .top_right .quick_menu{
-	width: 440px;
+	width: 415px;
 	float: left;
 }
+#top_nav .user_entry a{
+	color: black;
+}
+
+#top_nav .quick_menu a{
+	color: #777777;
+	/*border-right: 1px solid #777777;*/
+}
+
+
+
+
+#top_nav .quick_menu dl{
+	width: 78px;
+	line-height: 15px;
+	float: left;
+	margin-top: 9px;
+	text-align: center;
+	/*vertical-align: middle;*/
+	border-left: 1px solid #fafafa;
+	border-right: 1px solid #d6d6d6;
+	position: relative;
+	z-index: 999;
+}
+#top_nav .quick_menu dl dt{
+
+}
+#top_nav .quick_menu dl dd{
+	display: none;
+}
+#top_nav .quick_menu dl dd a{
+	width: 78px;
+	padding: 10px 0 6px;
+	display: inline-block;
+}
+#top_nav .quick_menu dl dt em{
+	width: 6px;
+	height: 5px;
+	margin-left: 6px;
+	background: url(../img/home/top_bg.png) no-repeat 0 0;
+	display: inline-block;
+}
+#top_nav .quick_menu .weixin{
+	border: 0;
+	width: 90px;
+}
+
+#top_nav .quick_menu .phoneShop i{
+	width: 11px;
+	height: 17px;
+	margin: 0 0px 0 10px;
+	background: url(../img/home/mobile-shopicon.png) no-repeat;
+	float: left;
+}
+#top_nav .quick_menu .weixin i{
+	width: 16px;
+	height: 16px;
+	margin: 0 0px 0 10px;
+	background: url(../img/home/weixin.png) no-repeat;
+	float: left;
+}
+#top_nav .quick_menu .weixin p{
+	color: #ffa500;
+}
+#top_nav .quick_menu .weixin img{
+	display: inline-block;
+}
+
+
+
+#top_nav .quick_menu dl:hover{
+	background: #fff;
+	/*line-height: 30px;*/
+	margin: 0;
+	border: 1px solid #d6d6d6;
+	border-top: 0;
+}
+#top_nav .quick_menu dl:hover dt{
+	padding-top: 9px;
+	height: 21px;
+}
+#top_nav .quick_menu dl:hover dd{
+	display: block;
+}
+#top_nav .quick_menu dl:hover em{
+	background: url(../img/home/top-up.png) no-repeat;
+}
+#top_nav .quick_menu dl dd a:hover{
+	background: #f6f6f6;
+}
+#top_nav .quick_menu .phoneShop:hover{
+	background: none;
+	border: 0;
+	margin-top: 9px;
+	border-right: 1px solid #d6d6d6;
+}
+#top_nav .quick_menu .phoneShop:hover dt{
+	padding: 0;
+	height: 100%;
+}
+
+
+
+
+
 
 /************* LOGO ************/
 #public_head{
